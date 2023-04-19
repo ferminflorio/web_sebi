@@ -1,0 +1,123 @@
+.service_container {
+	grid-area: service_container;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 250px auto;
+	grid-template-areas:
+		"service_header_container service_header_container"
+		"service_grid service_grid";
+	background-color: rgb(242 250 247);
+	border-style: double;
+	border-color: rgb(24 21 49);
+	border-bottom: 0;
+	border-right: 0;
+	border-left: 0;
+	padding-bottom: 150px;
+}
+
+.service_header_container {
+	grid-area: service_header_container;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.service_grid {
+	grid-area: service_grid;
+	padding: 0 150px;
+}
+
+.service_wrapper {
+	justify-self: center;
+}
+
+.service_header {
+	font-size: 55px;
+	color: rgb(24 21 49);
+	text-shadow: 1px 2px 3px rgb(134 138 178);
+	border: 10px solid;
+	border-width: 3px;
+	padding-bottom: 40px;
+}
+.only_bottom {
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+}
+
+.service_title {
+	color: rgb(24 21 49);
+	padding-bottom: 25px;
+	display: flex;
+	gap: 20px;
+}
+.service_info {
+	padding: 0px 100px 60px 110px;
+}
+
+.img_service {
+	height: 60px;
+}
+
+.service_name {
+	padding-top: 15px;
+	color: rgb(24 21 49);
+	align-self: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgb(134 138 178);
+}
+
+.service_text {
+	text-align: justify;
+	color: rgb(24 21 49);
+	font-weight: 400;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+	.service_grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"service_wrapper_1"
+			"service_wrapper_2"
+			"service_wrapper_3"
+			"service_wrapper_4";
+		gap: 45px;
+		padding: 0;
+	}
+	.service_info {
+		padding: 0px;
+	}
+	.service_name {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	.service_grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"service_wrapper_1"
+			"service_wrapper_2"
+			"service_wrapper_3"
+			"service_wrapper_4";
+		gap: 45px;
+		padding: 0;
+	}
+	.service_info {
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 769px) {
+	.service_grid {
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 901px) {
+	.service_grid {
+		padding: 0px;
+	}
+}
