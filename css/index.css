@@ -23,7 +23,7 @@
 .col_2_wrapper {
 	display: flex;
 	flex-direction: column;
-	gap: 85px;
+	gap: 55px;
 }
 
 .img_sebi {
@@ -50,8 +50,8 @@
 	display: flex;
 	flex-direction: column;
 	text-align: start;
-	gap: 10px;
-	padding-right: 10px;
+	gap: 8px;
+	padding-right: 285px;
 }
 .description_title {
 	font-size: 20px;
@@ -59,7 +59,7 @@
 	font-weight: bold;
 	color: rgb(242 250 247);
 	text-shadow: 0.5px 1px 1.5px rgb(134 138 178);
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 .resume_text {
 	font-size: 15px;
@@ -67,9 +67,6 @@
 	color: rgb(242 250 247);
 	padding-bottom: 15px;
 	text-align: justify;
-}
-.resume_padd {
-	padding-right: 150px;
 }
 
 @media screen and (max-width: 600px) and (min-width: 320px) {
@@ -176,8 +173,8 @@
 	}
 	.index_description {
 		text-align: center;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 100px;
+		padding-right: 100px;
 	}
 	.resume_text {
 		text-align: center;
@@ -191,8 +188,14 @@
 	}
 }
 
-@media screen and (max-width: 1560px) and (min-width: 1023px) {
-	.resume_padd {
-		padding-right: 15px;
+@media screen and (max-width: 1407px) and (min-width: 1023px) {
+	.index_description {
+		padding-right: 100px;
+	}
+}
+
+@media screen and (max-width: 1563px) and (min-width: 1408px) {
+	.index_description {
+		padding-right: 150px;
 	}
 }
