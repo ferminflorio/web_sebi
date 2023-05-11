@@ -213,6 +213,11 @@ p {
 		align-items: center;
 		padding-left: 0;
 	}
+
+	.adress_wrapper {
+		padding: 15px 6px 15px 8px;
+	}
+
 	.top_arrow {
 		grid-area: top_arrow;
 	}
